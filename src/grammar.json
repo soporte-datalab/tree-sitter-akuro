@@ -46,16 +46,24 @@
           ]
         },
         {
-          "type": "SYMBOL",
-          "name": "specification"
+          "type": "FIELD",
+          "name": "spec_type",
+          "content": {
+            "type": "SYMBOL",
+            "name": "specification"
+          }
         },
         {
           "type": "STRING",
           "value": "as"
         },
         {
-          "type": "SYMBOL",
-          "name": "specification"
+          "type": "FIELD",
+          "name": "spec_name",
+          "content": {
+            "type": "SYMBOL",
+            "name": "specification"
+          }
         },
         {
           "type": "STRING",
@@ -71,8 +79,12 @@
           "value": "add"
         },
         {
-          "type": "SYMBOL",
-          "name": "specification"
+          "type": "FIELD",
+          "name": "added_item",
+          "content": {
+            "type": "SYMBOL",
+            "name": "specification"
+          }
         },
         {
           "type": "REPEAT",
@@ -84,8 +96,12 @@
                 "value": ","
               },
               {
-                "type": "SYMBOL",
-                "name": "specification"
+                "type": "FIELD",
+                "name": "added_item",
+                "content": {
+                  "type": "SYMBOL",
+                  "name": "specification"
+                }
               }
             ]
           }
@@ -101,8 +117,12 @@
                   "value": "in"
                 },
                 {
-                  "type": "SYMBOL",
-                  "name": "specification"
+                  "type": "FIELD",
+                  "name": "context_item",
+                  "content": {
+                    "type": "SYMBOL",
+                    "name": "specification"
+                  }
                 }
               ]
             },
@@ -128,16 +148,24 @@
           ]
         },
         {
-          "type": "SYMBOL",
-          "name": "specification"
+          "type": "FIELD",
+          "name": "target_type",
+          "content": {
+            "type": "SYMBOL",
+            "name": "specification"
+          }
         },
         {
           "type": "STRING",
           "value": "of"
         },
         {
-          "type": "SYMBOL",
-          "name": "specification"
+          "type": "FIELD",
+          "name": "target_owner",
+          "content": {
+            "type": "SYMBOL",
+            "name": "specification"
+          }
         },
         {
           "type": "STRING",
@@ -161,8 +189,12 @@
           "value": "as"
         },
         {
-          "type": "SYMBOL",
-          "name": "specification"
+          "type": "FIELD",
+          "name": "alias",
+          "content": {
+            "type": "SYMBOL",
+            "name": "specification"
+          }
         },
         {
           "type": "STRING",

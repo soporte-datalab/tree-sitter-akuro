@@ -2,16 +2,47 @@
   {
     "type": "add_statement",
     "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "specification",
-          "named": true
-        }
-      ]
+    "fields": {
+      "added_item": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "specification",
+            "named": true
+          }
+        ]
+      },
+      "context_item": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "specification",
+            "named": true
+          }
+        ]
+      },
+      "target_owner": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "specification",
+            "named": true
+          }
+        ]
+      },
+      "target_type": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "specification",
+            "named": true
+          }
+        ]
+      }
     }
   },
   {
@@ -23,30 +54,48 @@
   {
     "type": "create_statement",
     "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "specification",
-          "named": true
-        }
-      ]
+    "fields": {
+      "spec_name": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "specification",
+            "named": true
+          }
+        ]
+      },
+      "spec_type": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "specification",
+            "named": true
+          }
+        ]
+      }
     }
   },
   {
     "type": "import_statement",
     "named": true,
-    "fields": {},
+    "fields": {
+      "alias": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "specification",
+            "named": true
+          }
+        ]
+      }
+    },
     "children": {
-      "multiple": true,
+      "multiple": false,
       "required": true,
       "types": [
-        {
-          "type": "specification",
-          "named": true
-        },
         {
           "type": "string",
           "named": true
