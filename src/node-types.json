@@ -1,0 +1,79 @@
+[
+  {
+    "type": "keyword",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "source_file",
+    "named": true,
+    "root": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "dot",
+          "named": true
+        },
+        {
+          "type": "keyword",
+          "named": true
+        },
+        {
+          "type": "specification",
+          "named": true
+        },
+        {
+          "type": "string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "add",
+    "named": false
+  },
+  {
+    "type": "as",
+    "named": false
+  },
+  {
+    "type": "create",
+    "named": false
+  },
+  {
+    "type": "dot",
+    "named": true
+  },
+  {
+    "type": "link",
+    "named": false
+  },
+  {
+    "type": "new",
+    "named": false
+  },
+  {
+    "type": "of",
+    "named": false
+  },
+  {
+    "type": "purge",
+    "named": false
+  },
+  {
+    "type": "specification",
+    "named": true
+  },
+  {
+    "type": "string",
+    "named": true
+  },
+  {
+    "type": "to",
+    "named": false
+  }
+]

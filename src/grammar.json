@@ -1,0 +1,95 @@
+{
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/grammar.schema.json",
+  "name": "akuro",
+  "rules": {
+    "source_file": {
+      "type": "REPEAT",
+      "content": {
+        "type": "SYMBOL",
+        "name": "_instruction"
+      }
+    },
+    "_instruction": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "keyword"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "specification"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "string"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "dot"
+        }
+      ]
+    },
+    "keyword": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "create"
+        },
+        {
+          "type": "STRING",
+          "value": "add"
+        },
+        {
+          "type": "STRING",
+          "value": "to"
+        },
+        {
+          "type": "STRING",
+          "value": "new"
+        },
+        {
+          "type": "STRING",
+          "value": "link"
+        },
+        {
+          "type": "STRING",
+          "value": "of"
+        },
+        {
+          "type": "STRING",
+          "value": "purge"
+        },
+        {
+          "type": "STRING",
+          "value": "as"
+        }
+      ]
+    },
+    "dot": {
+      "type": "STRING",
+      "value": "."
+    },
+    "specification": {
+      "type": "PATTERN",
+      "value": "[A-Z][a-z0-9_]*( [A-Z][a-z0-9_]*)*"
+    },
+    "string": {
+      "type": "PATTERN",
+      "value": "\"[^\"]*\""
+    }
+  },
+  "extras": [
+    {
+      "type": "PATTERN",
+      "value": "\\s"
+    }
+  ],
+  "conflicts": [],
+  "precedences": [],
+  "externals": [],
+  "inline": [],
+  "supertypes": [],
+  "reserved": {}
+}
